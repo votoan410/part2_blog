@@ -1,0 +1,189 @@
+/*default/root values*/
+:root {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  --grey: rgba(141, 136, 136, 0.582);
+  --blue: rgb(22, 131, 240);
+  --green: rgb(30, 209, 30);
+}
+
+body {
+  font-size: 1.8rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* following naming structures are 
+worded in B__E--M format (http://getbem.com/introduction/)
+*/
+
+.blog__container {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__subscribe {
+  color: var(--grey);
+  text-decoration: underline;
+}
+
+.header__title {
+  text-decoration: underline;
+}
+
+.header__button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.header__search {
+  width: 2rem;
+  color: var(--grey);
+}
+
+.paragraph__leftsection {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
+aside {
+  height: 100%;
+  width: 150px;
+  left: 0;
+  top: 0;
+  padding-top: 40px;
+  margin-left: 2rem;
+  float: right;
+}
+
+.sidebar__header--italic {
+  font-style: italic;
+}
+
+.sidebar__list {
+  white-space: nowrap;
+  list-style-type: none;
+}
+
+.sidebar__aboutSection {
+  background-color: lightgray;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar__section {
+  margin-bottom: 2rem;
+}
+
+.sidebar__anchor--link {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+.header__link {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+.paragraph__section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.blog__paragraph--date {
+  margin-top: 0.5rem;
+  color: var(--grey);
+}
+
+.blog__paragraph--basic {
+  position: relative;
+  display: box;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.blog__paragraph--topbordered {
+  position: relative;
+  display: box;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-top: 2px solid lightgray;
+}
+
+.blog__text--bordered {
+  border: 2px solid lightgray;
+  padding: 0 0 1rem 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blog__code--bordered {
+  border: 2px solid lightgray;
+  padding: 0 0 1rem 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blog__unorderlist {
+  padding-left: 3rem;
+}
+
+.blog__orderlist {
+  padding-left: 3rem;
+}
+
+.button__pillbutton {
+  background-color: white;
+  border: solid var(--grey);
+  color: var(--grey);
+  padding: 10px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 0px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+button:hover {
+  border: solid var(--blue);
+  color: var(--blue);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  margin: 2rem 0;
+  background-color: rgba(240, 235, 235, 0.308);
+  border: 2px solid lightgrey;
+}
+
+.footer__info {
+  color: var(--grey);
+}
+
+.footer__info--link {
+  text-decoration: underline;
+  color: var(--blue);
+}
